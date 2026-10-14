@@ -1,0 +1,34 @@
+# Paste into the EXISTING public_html/.htaccess (do not replace the file).
+# Old pages → sections of the new one-page site
+Redirect 301 /about-us.html /#about
+Redirect 301 /services.html /#services
+Redirect 301 /specials.html /#specials
+Redirect 301 /reviews.html /#reviews
+Redirect 301 /contact.html /#contact
+Redirect 301 /appointment.html /#book
+Redirect 301 /directions.html /#contact
+Redirect 301 /sitemap.html /
+Redirect 301 /brake_services.html /#services
+Redirect 301 /muffler-and-exhaust-repair.html /#services
+Redirect 301 /oil_change_service.html /#services
+Redirect 301 /synthetic-oil-change.html /#services
+Redirect 301 /tire_changeovers.html /#services
+Redirect 301 /tire_repairs.html /#services
+Redirect 301 /tire_rotation.html /#services
+Redirect 301 /tire_sales.html /#services
+Redirect 301 /tire_services.html /#services
+Redirect 301 /wheel_alignment.html /#services
+Redirect 301 /wheel_balancing.html /#services
+Redirect 301 /winter-tires.html /#services
+Redirect 301 /winterization_services.html /#services
+# Optional speed-ups
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+</IfModule>
